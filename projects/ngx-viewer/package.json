@@ -1,0 +1,33 @@
+{
+  "name": "ngx-viewer",
+  "version": "1.0.0",
+  "description": "Angular 6+ directive for the Viewer.js library",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/winteragency/ngx-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/winteragency/ngx-viewer/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "WINTER",
+    "email": "info@winteragency.se",
+    "url": "https://wintergency.se"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "viewer",
+    "viewerjs",
+    "viewer.js",
+    "directive",
+    "image viewer"
+  ],
+  "homepage": "https://github.com/winteragency/ngx-viewer",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "viewerjs": "^1.2.0"
+  }
+}

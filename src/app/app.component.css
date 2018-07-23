@@ -1,0 +1,6 @@
+div[ngxViewer] img {
+  display: inline-block;
+  cursor: pointer;
+  max-width: 500px;
+  height: auto;
+}
