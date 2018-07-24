@@ -35,7 +35,12 @@ export class NgxViewerDirective implements AfterViewInit, OnDestroy {
       this.viewer.destroy();
     }
 
-    this.viewer = new Viewer(this.nativeElement, this.viewerOptions);
+    this.viewer = new Viewer(this.nativeElement, {
+      // Transitions currently break the Viewer when running optimizations during ng build (i.e in prod mode)
+      // TODO: Find a fix for this so we don't have to force disable transitions
+      transition: false,
+      ...this.viewerOptions
+    });
 
     this.nativeElement.addEventListener('ready', event => this.viewerReady.emit(event), false);
     this.nativeElement.addEventListener('show', event => this.viewerShow.emit(event), false);
