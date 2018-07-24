@@ -7,8 +7,7 @@
     "build": "ng build ngx-viewer --prod",
     "test": "ng test ngx-viewer",
     "lint": "ng lint ngx-viewer",
-    "package:lib": "cd dist/ngx-viewer && npm pack",
-    "publish:lib": "npm publish ./dist/ngx-viewer"
+    "publish:lib": "cp README.md ./dist/ngx-viewer/README.md && npm publish ./dist/ngx-viewer"
   },
   "private": true,
   "dependencies": {
