@@ -119,6 +119,8 @@ See Viewer.js' docs for more information on each event.
 
 There's a known issue with the Viewer.js transitions that are normally enabled by default. They work fine in development but break (without errors) whenever building with optimizations active (i.e building for production). To get around this, the directive disables transitions by default. If you want to re-enable them (if, for some reason, you aren't running optimizations as part of your production builds) you can set `transition: true` in your [`viewerOptions`](#options).
 
+See [this issue](https://github.com/winteragency/ngx-viewer/issues/1).
+
 ## License
 
 The MIT License
