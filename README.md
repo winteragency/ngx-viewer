@@ -92,7 +92,7 @@ public viewerOptions: any = {
 };
 ```
 
-> **Note**: The Viewer.js defaults are always used as standard, with the [exception of the `transition` option](#Transitions).
+> **Note**: The Viewer.js defaults are always used as standard, with the [exception of the `transition` option](#transitions).
 
 ## Events
 
@@ -117,7 +117,7 @@ See Viewer.js' docs for more information on each event.
 
 ## Transitions
 
-There's a known issue with the Viewer.js transitions that are normally enabled by default. They work fine in development but break (without errors) whenever building with optimizations active (i.e building for production). To get around this, the directive disables transitions by default. If you want to re-enable them (if, for some reason, you aren't running optimizations as part of your production builds) you can set `transition: true` in your [`viewerOptions`](#Options).
+There's a known issue with the Viewer.js transitions that are normally enabled by default. They work fine in development but break (without errors) whenever building with optimizations active (i.e building for production). To get around this, the directive disables transitions by default. If you want to re-enable them (if, for some reason, you aren't running optimizations as part of your production builds) you can set `transition: true` in your [`viewerOptions`](#options).
 
 ## License
 
