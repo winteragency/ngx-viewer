@@ -1,4 +1,4 @@
-import { Directive, ElementRef, NgModule, OnDestroy, AfterViewInit, Input, Output, EventEmitter } from '@angular/core';
+﻿import { Directive, ElementRef, NgModule, OnDestroy, AfterViewInit, Input, Output, EventEmitter } from '@angular/core';
 
 import * as ViewerLibrary from 'viewerjs';
 const Viewer = ViewerLibrary.default;
@@ -19,7 +19,8 @@ export class NgxViewerDirective implements AfterViewInit, OnDestroy {
   @Output() private viewerZoom: EventEmitter<Event> = new EventEmitter<Event>();
   @Output() private viewerZoomed: EventEmitter<Event> = new EventEmitter<Event>();
 
-  private viewer: any;
+  instance: Viewer;
+
   private nativeElement: HTMLElement;
 
   constructor(private elementRef: ElementRef) {
@@ -31,11 +32,11 @@ export class NgxViewerDirective implements AfterViewInit, OnDestroy {
   }
 
   private initViewer(): void {
-    if (this.viewer) {
-      this.viewer.destroy();
+    if (this.instance) {
+      this.instance.destroy();
     }
 
-    this.viewer = new Viewer(this.nativeElement, {
+    this.instance = new Viewer(this.nativeElement, {
       // Transitions currently break the Viewer when running optimizations during ng build (i.e in prod mode)
       // TODO: Find a fix for this so we don't have to force disable transitions
       transition: false,
@@ -54,8 +55,8 @@ export class NgxViewerDirective implements AfterViewInit, OnDestroy {
   }
 
   public ngOnDestroy(): void {
-    if (this.viewer) {
-      this.viewer.destroy();
+    if (this.instance) {
+      this.instance.destroy();
     }
   }
 }
