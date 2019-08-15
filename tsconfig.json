@@ -22,6 +22,9 @@
       ],
       "ngx-viewer/*": [
         "dist/ngx-viewer/*"
+      ],
+      "core-js/es7/reflect": [
+        "node_modules/core-js/proposals/reflect-metadata"
       ]
     }
   }
