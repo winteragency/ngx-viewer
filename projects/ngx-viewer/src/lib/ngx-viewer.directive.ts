@@ -1,7 +1,5 @@
 ﻿import { Directive, ElementRef, NgModule, OnDestroy, AfterViewInit, Input, Output, EventEmitter } from '@angular/core';
-
-import * as ViewerLibrary from 'viewerjs';
-const Viewer = ViewerLibrary.default;
+import Viewer from 'viewerjs';
 
 @Directive({
   selector: '[ngxViewer]'
