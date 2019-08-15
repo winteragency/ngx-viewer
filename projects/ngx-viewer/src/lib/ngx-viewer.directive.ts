@@ -19,7 +19,7 @@ export class NgxViewerDirective implements AfterViewInit, OnDestroy {
   @Output() private viewerZoom: EventEmitter<Event> = new EventEmitter<Event>();
   @Output() private viewerZoomed: EventEmitter<Event> = new EventEmitter<Event>();
 
-  instance: any;
+  instance: Viewer;
 
   private nativeElement: HTMLElement;
 
