@@ -1,6 +1,6 @@
 {
   "name": "ngx-viewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Angular 6+ directive for the Viewer.js library",
   "repository": {
     "type": "git",
@@ -26,8 +26,8 @@
   ],
   "homepage": "https://github.com/winteragency/ngx-viewer",
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
-    "viewerjs": "^1.2.0"
+    "@angular/common": "^8.2.2",
+    "@angular/core": "^8.2.2",
+    "viewerjs": "^1.3.6"
   }
 }
