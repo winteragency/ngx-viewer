@@ -5,17 +5,17 @@ import Viewer from 'viewerjs';
   selector: '[ngxViewer]'
 })
 export class NgxViewerDirective implements AfterViewInit, OnDestroy {
-  @Input() private viewerOptions: Viewer.Options = {};
+  @Input() viewerOptions: Viewer.Options = {};
 
-  @Output() private viewerReady: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerShow: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerShown: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerHide: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerHidden: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerView: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerViewed: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerZoom: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() private viewerZoomed: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerReady: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerShow: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerShown: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerHide: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerHidden: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerView: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerViewed: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerZoom: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() viewerZoomed: EventEmitter<Event> = new EventEmitter<Event>();
 
   instance: Viewer;
 
