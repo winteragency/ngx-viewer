@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://img.shields.io/npm/v/ngx-viewer.svg)](https://www.npmjs.com/package/ngx-viewer) [![Total Downloads](https://img.shields.io/npm/dt/ngx-viewer.svg)](https://npm-stat.com/charts.html?package=ngx-viewer) [![License](https://img.shields.io/github/license/winteragency/ngx-viewer.svg)](https://github.com/winteragency/ngx-viewer) [![Made by WINTER](https://img.shields.io/badge/made%20by-%E2%9D%84%20WINTER-blue.svg)](https://winteragency.se)
 
-This is a simple Angular 6+ directive wrapping the amazing [Viewer.js](https://fengyuanchen.github.io/viewerjs/) library.
+This is a simple Angular 8+ directive wrapping the amazing [Viewer.js](https://fengyuanchen.github.io/viewerjs/) library.
 
 ## Installation
 
